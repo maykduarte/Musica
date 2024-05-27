@@ -1,0 +1,120 @@
+body {
+    margin: 0px;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.container-logo {
+    text-wrap: nowrap;
+    display: flex; 
+    align-items: center;
+}
+
+.container-logo p {
+    padding-left: 4px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.links-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.links-nav a{
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.links-nav .Inicio:hover {
+    color: rgb(109, 109, 109);
+}
+.links-nav .Quienes:hover {
+    color: rgb(109, 109, 109);
+}
+.links-nav .Grabaciones:hover {
+    color: rgb(109, 109, 109);
+}
+.links-nav .Mezclas:hover {
+    color: rgb(109, 109, 109);
+}
+
+.btn-grabaciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    border-left: 3px  solid rgb(159, 159, 159);
+    border-bottom: 3px solid  rgb(159, 159, 159);
+    border-radius: 9px;
+    width: 35%;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-grabaciones:hover {
+    background-color: rgb(238, 174, 12);
+}
+
+.btn-mezclas:hover {
+    background-color: rgb(238, 174, 12);
+}
+     
+.btn-mezclas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    border-left: 3px  solid rgb(159, 159, 159);
+    border-bottom: 3px solid  rgb(159, 159, 159);
+    border-radius: 9px;
+    width: 35%;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+
+}
+
+.footer {
+    border-top: 1px solid black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
