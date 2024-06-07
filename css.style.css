@@ -1,0 +1,128 @@
+header {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 15px;
+}
+header nav ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.btn-contianer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn-contianer a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  text-decoration: none;
+  color: black;
+  padding: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0%;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul a {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+.introduction h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.introduction p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.container-servicios {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dv1, .mezcla, .dv2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.dv1 img:hover, .mezcla img:hover, .dv2 img:hover {
+  border: 3px solid black;
+  border-radius: 100%;
+  transition: all 500ms;
+}
+.dv1 h3, .mezcla h3, .dv2 h3 {
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dv1 p, .mezcla p, .dv2 p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mezcla p {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.proyecto {
+  background-color: grey;
+  padding: 70px;
+}
+.proyecto a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.proyecto:hover {
+  background-color: black;
+  transition: all 500ms;
+}
+
+.formulario {
+  background-image: url(../../imagenes/consola.jpeg);
+}
+
+/*# sourceMappingURL=css.style.css.map */

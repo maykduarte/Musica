@@ -1,0 +1,65 @@
+.grabaciones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    text-align: center;
+    
+    p{
+    padding: 30px;
+    }
+} 
+
+.imagenesArtistas-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    .artista-1{
+        &:hover{
+        transform: scale(1.3); 
+        transition-duration: 1s; 
+        }
+    }
+}
+.imagenesArtistas-2 {
+    @extend .imagenesArtistas-1; 
+    padding-bottom: 100px;
+}
+
+
+.artista-2 {
+    @extend .artista-1; 
+}
+.artista-3 {
+    @extend .artista-1; 
+}
+.artista-4 {
+    @extend .artista-1; 
+}
+.artista-5 {
+    @extend .artista-1; 
+}
+
+.artista-6 {
+    @extend .artista-1; 
+}
+.artista-7 {
+    @extend .artista-1;  
+}
+.artista-8 {
+    @extend .artista-1;  
+}
+
+@media (max-width:700px){
+    .imagenesArtistas-1{
+        flex-direction: column 
+    }
+}
+/* 
+@media (max-width:700px){
+    .imagenesArtistas-2{  
+        flex-direction: column 
+    }
+} */ 
