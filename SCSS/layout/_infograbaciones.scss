@@ -1,119 +1,132 @@
-$fontStyle: arial; 
+$fontStyle: arial;
 
 .introGrabaciones {
-    text-align: center; 
-    h1{
+    text-align: center;
+
+    h1 {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 30px;  
-        font-family: $fontStyle; 
-        font-size: 2rem;  
-    } 
-    .info1{
-    text-align: center 
+        padding: 30px;
+        font-family: $fontStyle;
+        font-size: 2rem;
     }
+
+    .info1 {
+        text-align: center
+    }
+
     .info2 {
         @extend .info1;
         padding-top: 20px;
-        padding-bottom: 50px;   
+        padding-bottom: 50px;
     }
-    p{
-        font-family: $fontStyle; 
+
+    p {
+        font-family: $fontStyle;
     }
-    span{
-        font-family: $fontStyle; 
+
+    span {
+        font-family: $fontStyle;
     }
 }
 
-.ContainerGuitarristas{
-    background-color: rgb(90, 90, 90);   
+.ContainerGuitarristas {
+    background-color: rgb(90, 90, 90);
     display: flex;
-    flex-direction: column;   
-    flex-wrap: wrap; 
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around; 
-    box-shadow: 10px 6px 21px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 6px 21px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 6px 21px 0px rgba(0,0,0,0.75); 
-    .infoGuitarristas{
-        h2{
-            padding: 25px; 
-            font-family: Arial, Helvetica, sans-serif; 
-            color: white; 
+    justify-content: space-around;
+    box-shadow: 10px 6px 21px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 6px 21px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 21px 0px rgba(0, 0, 0, 0.75);
+
+    .infoGuitarristas {
+        h2 {
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
         }
     }
-    
+
 }
 
-.boxInfo{ 
-    text-align: center;  
-    h2{
-        font-family: Arial, Helvetica, sans-serif ; 
+.boxInfo {
+    text-align: center;
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
         padding-top: 20px;
-        color: white;     
+        color: white;
     }
-    p{
-        padding: 20px; 
-        color: white;  
-}
+
+    p {
+        padding: 20px;
+        color: white;
+    }
 }
 
-.encabezadoPrecio{
-    h1{ 
-        display:flex; 
+.encabezadoPrecio {
+    h1 {
+        display: flex;
         align-items: center;
-        justify-content: center;  
-        font-family: $fontStyle; 
-        padding-top: 80px; 
-        padding-bottom: 80px;   
+        justify-content: center;
+        font-family: $fontStyle;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
-}  
+}
 
 // seccion de boxes de precios 
 
-.containerPrecioElectrica { 
-    display: flex; 
+.containerPrecioElectrica {
+    display: flex;
     align-items: center;
-    justify-content: space-around;    
+    justify-content: space-around;
     align-items: start;
 }
 
-.GuitarraElectrica1{
-        border-radius: 10px;  
-        background-color: rgb(229, 229, 229); 
-        text-align: center; 
-        float: left;
-        width: calc(34% - 20px); box-shadow: 10px 6px 21px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 6px 21px 0px rgba(95, 95, 95, 0.75);
-        -moz-box-shadow: 10px 6px 21px 0px rgba(147, 147, 147, 0.75);        
-    }
-    h3{
+.GuitarraElectrica1 {
+    border-radius: 10px;
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+    float: left;
+    width: calc(34% - 20px);
+    box-shadow: 10px 6px 21px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 6px 21px 0px rgba(95, 95, 95, 0.75);
+    -moz-box-shadow: 10px 6px 21px 0px rgba(147, 147, 147, 0.75);
+
+    h3 {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         padding: 10px;
     }
-    H2{
+
+    H2 {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        padding: 10px;  
+        padding: 10px;
     }
+
     ul {
-    padding: 8px;   
+        padding: 8px;
     }
-    li{  
-        display: flex; 
-        flex-direction: column; 
-        padding-bottom: 10px;       
-        font-family: Arial, Helvetica, sans-serif;   
+
+    li {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
 
 .GuitarraElectrica2 {
-    @extend .GuitarraElectrica1;  
+    @extend .GuitarraElectrica1;
 }
 
-.GuitarraElectrica3 {  
-    @extend .GuitarraElectrica1;  
+.GuitarraElectrica3 {
+    @extend .GuitarraElectrica1;
 }
 
 
@@ -122,35 +135,37 @@ $fontStyle: arial;
 
 .containerPrecioAcustica {
     @extend .containerPrecioElectrica;
-    padding-top: 30px;  
-    padding-bottom: 50px; 
-    flex-wrap: wrap; 
+    padding-top: 30px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
-.GuitarraAcustica1 {  
-    @extend .GuitarraElectrica1;  
-} 
-.GuitarraAcustica2 {  
-    @extend .GuitarraElectrica1;   
-} 
-.GuitarraAcustica3 {  
-    @extend .GuitarraElectrica1;   
-} 
+.GuitarraAcustica1 {
+    @extend .GuitarraElectrica1;
+}
+
+.GuitarraAcustica2 {
+    @extend .GuitarraElectrica1;
+}
+
+.GuitarraAcustica3 {
+    @extend .GuitarraElectrica1;
+}
 
 
-@media (max-width:720px){
-    header{
+@media (max-width:720px) {
+    header {
         flex-direction: column;
-    } 
+    }
+
     .containerPrecioElectrica {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
+
     .GuitarraElectrica1 {
         width: auto;
-        max-width: 720px; 
+        max-width: 720px;
         margin: 12px;
     }
-}  
-
-
+}

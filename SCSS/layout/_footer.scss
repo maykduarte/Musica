@@ -1,20 +1,17 @@
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 0px 12px 0px;  
-}
+    padding: 12px 0px 12px 0px;
 
+    nav {
+        ul {
+            display: flex;
 
-    
-
-
-nav{
-    ul{
-        display: flex;
-            a{
-            list-style-type: none;
-            padding-left: 25px;
+            a {
+                list-style-type: none;
+                padding-left: 25px;
             }
         }
     }
+}
