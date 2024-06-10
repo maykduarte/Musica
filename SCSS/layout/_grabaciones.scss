@@ -6,10 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 50px;
     text-align: center;
-    
-    p{
-    padding: 30px;
-    }
+            p{
+            padding: 30px;
+        }
 } 
 
 .imagenesArtistas-1{
@@ -57,9 +56,4 @@
         flex-direction: column 
     }
 }
-/* 
-@media (max-width:700px){
-    .imagenesArtistas-2{  
-        flex-direction: column 
-    }
-} */ 
+
