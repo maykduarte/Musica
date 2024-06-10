@@ -1,97 +1,123 @@
-.containerBody{
+.containerBody  {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-} 
-
-h1{
-    display:flex;
-    align-items: center; 
-    justify-content: center; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem; 
-    padding-top: 30px; 
-}
-p{
-    display:flex;
-    align-items: center; 
-    justify-content: center;
-    text-align: center; 
-    font-family: Arial, Helvetica, sans-serif;  
-    padding: 15px;  
-}
-
-.containerPrecioMezcla {  
-    display: flex; 
     align-items: center;
-    justify-content: space-around;    
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        padding-top: 30px;
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+        }
+    }
+}
+.introMezclas{
+    @extend .containerBody;
+
+    .info1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+    }
+}
+
+
+
+.containerPrecioMezcla {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     align-items: start;
     padding-top: 30px;
     padding-bottom: 50px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
-.mezcla1{  
-        border-radius: 10px;  
-        background-color: rgb(229, 229, 229); 
-        text-align: center; 
-        float: left;
-        width: calc(34% - 20px); box-shadow: 10px 6px 21px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 6px 21px 0px rgba(95, 95, 95, 0.75);
-        -moz-box-shadow: 10px 6px 21px 0px rgba(147, 147, 147, 0.75);       
-    }
-    h3{
+.mezcla1 {
+    border-radius: 10px;
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+    float: left;
+    width: calc(34% - 20px);
+    box-shadow: 10px 6px 21px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 6px 21px 0px rgba(95, 95, 95, 0.75);
+    -moz-box-shadow: 10px 6px 21px 0px rgba(147, 147, 147, 0.75);
+
+
+    h3 {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         padding: 10px;
     }
-    H2{
+
+    H2 {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        padding: 10px;  
+        padding: 10px;
     }
+
     ul {
-    padding: 8px;   
+        padding: 8px;
     }
-    li{  
-        display: flex; 
-        flex-direction: column; 
-        padding-bottom: 10px;       
-        font-family: Arial, Helvetica, sans-serif;   
+
+    li {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
-.encabezadoPrecio{
+
+.encabezadoPrecio {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     font-family: arial;
-} 
+}
 
 
 .mezcla2 {
-    @extend .mezcla1; 
+    @extend .mezcla1;
 }
-.mezcla3 {
-    @extend .mezcla1; 
-} 
 
-@media (max-width:720px){
-    header{
+.mezcla3 {
+    @extend .mezcla1;
+}
+
+@media (max-width:720px) {
+    header {
         flex-direction: column;
-    } 
+    }
+
     .containerPrecioMezcla {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
-    .mezcla1 { 
-        width: auto !important; 
+
+    .mezcla1 {
+        width: auto !important;
         max-width: 720px;
-        margin: 12px; 
+        margin: 12px;
 
     }
-} 
-.formulario{   
-    width: 100%; 
-    padding: 8px; 
-} 
+}
+
+.formulario {
+    width: 100%;
+    padding: 8px;
+}

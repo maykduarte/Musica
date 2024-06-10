@@ -1,8 +1,10 @@
 
 header{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px black solid;
 .logo{
     display: flex;
     align-items: center;
@@ -13,6 +15,11 @@ header{
 
 
 nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
     ul{
         li{
             list-style-type: none;

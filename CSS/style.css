@@ -1,7 +1,9 @@
 header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px black solid;
 }
 header .logo {
   display: flex;
@@ -9,6 +11,12 @@ header .logo {
 }
 header .logo h4 {
   font-family: Arial, Helvetica, sans-serif;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
 }
 header nav ul li {
   list-style-type: none;
@@ -34,6 +42,9 @@ header nav ul li a:hover {
 
 footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px 12px 0px;
 }
 
 nav ul {
@@ -65,7 +76,6 @@ nav ul a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 50px;
 }
 
 .dv1, .mezcla, .dv2 {
@@ -117,14 +127,16 @@ nav ul a {
   background-image: url(../../imagenes/consola.jpeg);
   background-size: cover;
   background-position: center;
-  padding-left: 25px;
   padding-bottom: 30px;
 }
 .formulario .control {
-  width: 90%;
+  width: 100%;
   opacity: 50%;
-  padding: 15px;
-  border-radius: 8px;
+  padding: 15px 0px 15px 15px;
+  margin: 4px 0px 4px;
+}
+.formulario .inputs {
+  overflow: hidden;
 }
 .formulario span {
   display: flex;
@@ -135,6 +147,7 @@ nav ul a {
   padding: 35px;
 }
 .formulario .btn {
+  margin-top: 8px;
   border-radius: 6px;
   padding: 5px;
   background-color: yellow;
@@ -142,12 +155,15 @@ nav ul a {
 .formulario .btn:hover {
   background-color: grey;
 }
+.formulario .form {
+  padding: 35px;
+}
 
 .comentario {
-  width: 90%;
+  width: 100%;
   opacity: 50%;
-  padding: 15px 15px 60px;
-  border-radius: 8px;
+  padding: 15px 0px 60px 15px;
+  margin: 4px 0px 4px;
 }
 
 .grabaciones {
@@ -182,6 +198,12 @@ nav ul a {
     flex-direction: column;
   }
 }
+/* 
+@media (max-width:700px){
+    .imagenesArtistas-2{  
+        flex-direction: column 
+    }
+} */
 .introGrabaciones {
   text-align: center;
 }
@@ -307,14 +329,25 @@ li {
     margin: 12px;
   }
 }
-.containerBody {
+.fotosHermanos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 720px) {
+  .fotosHermanos {
+    flex-direction: column;
+  }
+}
+.containerBody, .introMezclas {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-h1 {
+.containerBody h1, .introMezclas h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,8 +355,16 @@ h1 {
   font-size: 2rem;
   padding-top: 30px;
 }
+.containerBody h1 p, .introMezclas h1 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
 
-p {
+.introMezclas .info1, .introMezclas .introGrabaciones .info2, .introGrabaciones .introMezclas .info2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,24 +393,20 @@ p {
   -webkit-box-shadow: 10px 6px 21px 0px rgba(95, 95, 95, 0.75);
   -moz-box-shadow: 10px 6px 21px 0px rgba(147, 147, 147, 0.75);
 }
-
-h3 {
+.mezcla1 h3, .mezcla3 h3, .mezcla2 h3 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 10px;
 }
-
-H2 {
+.mezcla1 H2, .mezcla3 H2, .mezcla2 H2 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 10px;
 }
-
-ul {
+.mezcla1 ul, .mezcla3 ul, .mezcla2 ul {
   padding: 8px;
 }
-
-li {
+.mezcla1 li, .mezcla3 li, .mezcla2 li {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
@@ -401,19 +438,6 @@ li {
 .formulario {
   width: 100%;
   padding: 8px;
-}
-
-.fotosHermanos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 720px) {
-  .fotosHermanos {
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
