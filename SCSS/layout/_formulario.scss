@@ -1,7 +1,7 @@
 .formulario{
     display: flex;
     justify-content: center; 
-    background-color: rgb(48, 48, 48);
+    background-image: url('../../imagenes/consola.jpeg');
     background-size: cover;
     background-position: center;
     padding: 8px;
@@ -27,7 +27,6 @@
                         padding: 10px;  
                     }
                 }
-            
         }
         .inputs{   
             margin: 8px 0; // Espaciado entre inputs

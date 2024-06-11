@@ -128,7 +128,7 @@ footer nav ul a {
 .formulario {
   display: flex;
   justify-content: center;
-  background-color: rgb(48, 48, 48);
+  background-image: url("../../imagenes/consola.jpeg");
   background-size: cover;
   background-position: center;
   padding: 8px;
