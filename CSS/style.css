@@ -13,7 +13,7 @@ header .logo h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 header nav {
-  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -126,39 +126,48 @@ footer nav ul a {
 }
 
 .formulario {
+  display: flex;
+  justify-content: center;
   background-image: url(../../imagenes/consola.jpeg);
   background-size: cover;
   background-position: center;
-  padding-bottom: 30px;
+  padding: 8px;
+  margin: 0px 5px 0px 5px;
+  width: auto;
 }
 .formulario .control {
   width: 100%;
   opacity: 50%;
   padding: 15px 0px 15px 15px;
   margin: 4px 0px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .formulario .control .btn {
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   padding: 35px;
+  margin: 10px 0;
 }
 .formulario .control .btn .form {
-  padding: 35px;
+  padding: 10px;
 }
 .formulario .inputs {
-  width: 98%;
+  margin: 8px 0;
+  padding: 10px;
 }
 
 span {
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
-  padding: 35px;
+  padding: 10px;
 }
 
 .comentario {
@@ -166,6 +175,9 @@ span {
   opacity: 50%;
   padding: 15px 0px 60px 15px;
   margin: 4px 0px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grabaciones {
@@ -437,14 +449,10 @@ span {
     align-items: center;
   }
   .mezcla1, .mezcla2, .mezcla3 {
-    width: auto !important;
+    width: auto;
     max-width: 720px;
     margin: 12px;
   }
-}
-.formulario {
-  width: 100%;
-  padding: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
