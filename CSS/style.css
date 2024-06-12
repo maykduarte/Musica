@@ -53,8 +53,15 @@ footer nav ul {
   display: flex;
 }
 footer nav ul a {
+  margin: 0px 8px 0px 8px;
   list-style-type: none;
-  padding-left: 25px;
+}
+footer nav ul a:hover {
+  background-color: yellow;
+  border-radius: 44px;
+  width: 40px;
+  height: 40px;
+  transition: all 2000ms;
 }
 
 .introduction h1 {
@@ -128,7 +135,7 @@ footer nav ul a {
 .formulario {
   display: flex;
   justify-content: center;
-  background-image: url("../../imagenes/consola.jpeg");
+  background-image: url("../imagenes/consola.jpeg");
   background-size: cover;
   background-position: center;
   padding: 8px;
@@ -379,6 +386,10 @@ span {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+.containerBody h2, .introMezclas h2 {
   font-family: Arial, Helvetica, sans-serif;
   padding: 15px;
 }
